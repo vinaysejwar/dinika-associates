@@ -21,7 +21,7 @@ The site implements a bespoke, earthy, and trustworthy design system rather than
 
 *   **Color Palette:**
     *   **Base:** White (`#FFFFFF`)
-    *   **Primary (Brand):** Terracotta / Warm Clay (`#B5502E`) — Evokes land, construction, warmth, and trust.
+    *   **Primary (Brand):** Terracotta / Warm Clay (`#bf9f62`) — Evokes land, construction, warmth, and trust.
     *   **Secondary:** Deep Charcoal (`#1C1B19`) — For high-contrast headers, text, and the footer.
     *   **Accent:** Muted Sage / Olive Green (`#5C6B4F`) — Used for agricultural ties, success badges, and subtle highlights.
 *   **Typography:**
