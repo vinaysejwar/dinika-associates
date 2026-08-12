@@ -9,35 +9,35 @@ import { Card, CardContent, CardImage, CardTitle, CardDescription } from "@/comp
 import { cn } from "@/lib/utils"
 
 const projects = [
-  { 
-    name: "IRIS \u2013 New Commercial at Super Corridor", 
-    status: "Upcoming", 
-    image: "/projects/super-corridor.png", 
-    desc: "Next-gen commercial spaces designed for modern businesses and high footfall." 
+  {
+    name: "IRIS \u2013 New Commercial at Super Corridor",
+    status: "Ongoing",
+    image: "/projects/super-corridor.png",
+    desc: "Next-gen commercial spaces designed for modern businesses and high footfall."
   },
-  { 
-    name: "IRIS Premium", 
-    status: "Ongoing", 
-    image: "/projects/iris-premium-plan.png", 
-    desc: "Luxury residential apartments in a prime locale with world-class amenities." 
+  {
+    name: "IRIS Premium",
+    status: "Ongoing",
+    image: "/projects/iris-premium-plan.png",
+    desc: "Luxury residential apartments in a prime locale with world-class amenities."
   },
-  { 
-    name: "IRIS Ayodhya Estate", 
-    status: "Ongoing", 
-    image: "/projects/farm-estate.png", 
-    desc: "Premium plotted development designed for custom homes and farm estates." 
+  {
+    name: "IRIS Future",
+    status: "Upcoming",
+    image: "/projects/iris-future-plan.png",
+    desc: "Premium plotted development designed for custom homes and farm estates."
   },
-  { 
-    name: "IRIS Park", 
-    status: "Completed", 
-    image: "/projects/iris-park-plan.png", 
-    desc: "A beautifully planned residential community with robust infrastructure." 
+  {
+    name: "IRIS Park",
+    status: "Completed",
+    image: "/projects/iris-park-plan.png",
+    desc: "A beautifully planned residential community with robust infrastructure."
   },
-  { 
-    name: "IRIS Nest", 
-    status: "Completed", 
-    image: "/projects/iris-nest-plan.png", 
-    desc: "Cozy and secure living spaces crafted for modern families." 
+  {
+    name: "IRIS Nest",
+    status: "Completed",
+    image: "/projects/iris-nest-plan.png",
+    desc: "Cozy and secure living spaces crafted for modern families."
   },
 ]
 
@@ -53,10 +53,10 @@ export default function ProjectsPage() {
 
   return (
     <PageFrame ctaTitle="Interested in a project? Get in touch for site visits and pricing.">
-      <PageIntro 
-        eyebrow="Our Projects" 
-        title="A Fast-Growing Real Estate Destination in Indore" 
-        description="The Super Corridor is rapidly transforming into Indore's prime hub for commercial and residential development, offering planned infrastructure, bustling commercial activity, and high residential demand." 
+      <PageIntro
+        eyebrow="Our Projects"
+        title="A Fast-Growing Real Estate Destination in Indore"
+        description="The Super Corridor is rapidly transforming into Indore's prime hub for commercial and residential development, offering planned infrastructure, bustling commercial activity, and high residential demand."
       />
 
       <Section className="py-20 sm:py-28 min-h-[60vh]">
@@ -68,8 +68,8 @@ export default function ProjectsPage() {
               onClick={() => setFilter(tab)}
               className={cn(
                 "px-5 py-2.5 rounded-full text-sm font-semibold transition-all border",
-                filter === tab 
-                  ? "bg-secondary border-secondary text-secondary-foreground shadow-sm" 
+                filter === tab
+                  ? "bg-secondary border-secondary text-secondary-foreground shadow-sm"
                   : "bg-background border-border text-muted-foreground hover:bg-muted hover:text-foreground hover:border-border/80"
               )}
             >
@@ -103,7 +103,7 @@ export default function ProjectsPage() {
             </Card>
           ))}
         </div>
-        
+
         {/* EMPTY STATE (Just in case) */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-20 text-muted-foreground">

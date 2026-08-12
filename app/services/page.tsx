@@ -7,10 +7,10 @@ export default function ServicesPage() {
   return (
     <PageFrame ctaTitle="Not sure where to start? Talk to our team." ctaDescription="Our real estate experts are here to help you navigate every step of the journey.">
       {/* PAGE HEADER */}
-      <PageIntro 
-        eyebrow="Our Services" 
-        title="End-to-End Real Estate Solutions" 
-        description="Comprehensive real estate advisory and support tailored to your unique requirements, from finding the right property to finalizing the deal and beyond." 
+      <PageIntro
+        eyebrow="Our Services"
+        title="End-to-End Real Estate Solutions"
+        description="Comprehensive real estate advisory and support tailored to your unique requirements, from finding the right property to finalizing the deal and beyond."
       />
 
       {/* STICKY SUB-NAV */}
@@ -38,11 +38,11 @@ export default function ServicesPage() {
               <Card className="flex-1 shadow-sm border-border/80">
                 <CardContent className="p-6 space-y-4">
                   {[
-                    "Plot consultation", 
-                    "Apartment/villa assistance", 
-                    "Home buying guidance", 
-                    "Location analysis", 
-                    "Property visits & evaluation", 
+                    "Plot consultation",
+                    "Apartment/villa assistance",
+                    "Home buying guidance",
+                    "Location analysis",
+                    "Property visits & evaluation",
                     "Documentation support"
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3 items-start">
@@ -66,11 +66,11 @@ export default function ServicesPage() {
               <Card className="flex-1 shadow-sm border-border/80">
                 <CardContent className="p-6 space-y-4">
                   {[
-                    "Property consultation", 
-                    "Office/retail advisory", 
-                    "Commercial plot investment", 
-                    "Market/location analysis", 
-                    "Buying/selling/leasing assistance", 
+                    "Property consultation",
+                    "Office/retail advisory",
+                    "Commercial plot investment",
+                    "Market/location analysis",
+                    "Buying/selling/leasing assistance",
                     "Negotiation & documentation support"
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3 items-start">
@@ -94,10 +94,10 @@ export default function ServicesPage() {
               <Card className="flex-1 shadow-sm border-border/80">
                 <CardContent className="p-6 space-y-4">
                   {[
-                    "Land consultation", 
-                    "Investment advisory", 
-                    "Location/market analysis", 
-                    "Property verification", 
+                    "Land consultation",
+                    "Investment advisory",
+                    "Location/market analysis",
+                    "Property verification",
                     "Investment planning support"
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3 items-start">
@@ -154,20 +154,20 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border relative">
-                <img src="/projects/indore-residence.png" alt="Interior Details" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
-             </div>
-             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border relative">
-                <img src="/projects/super-corridor.png" alt="Commercial Space" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
-             </div>
-             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border hidden md:block relative">
-                <img src="/projects/indore-residence.png" alt="Home Decor" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
-             </div>
-             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border hidden md:block relative">
-                <img src="/projects/farm-estate.png" alt="Landscaping" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
-             </div>
+            <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border relative">
+              <img src="/projects/images.jfif" alt="Interior Details" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+            <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border hidden md:block relative">
+              <img src="/projects/Residential.jpg" alt="Home Decor" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+            <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border relative">
+              <img src="/projects/super-corridor.png" alt="Commercial Space" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+            <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border hidden md:block relative">
+              <img src="/projects/farm-estate.png" alt="Landscaping" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
           </div>
         </Section>
       </div>

@@ -9,7 +9,7 @@ export function DinikaSite() {
   return (
     <div className="bg-background text-foreground">
       {/* 1. HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-5 sm:px-8 lg:px-12 bg-background border-b border-border/50">
+      <section className="relative pt-24 pb-20 lg:pt-30 lg:pb-32 px-5 sm:px-8 lg:px-12 bg-background border-b border-border/50">
         <div className="mx-auto max-w-7xl flex flex-col items-center text-center">
           <h1 className="font-serif text-5xl leading-[1.05] tracking-tight sm:text-7xl lg:text-[5.5rem] max-w-5xl text-secondary">
             Real Estate &mdash; Building Dreams, <span className="text-primary">Creating Value</span> & Relationships
@@ -29,11 +29,11 @@ export function DinikaSite() {
         <div className="mx-auto max-w-7xl mt-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:h-[450px]">
             <div className="md:col-span-2 overflow-hidden rounded-2xl bg-muted relative h-[300px] md:h-auto border border-border/50">
-              <img src="/projects/indore-residence.png" alt="Residential Property" className="absolute inset-0 size-full object-cover" />
+              <img src="/projects/Residential.jpg" alt="Residential Property" className="absolute inset-0 size-full object-cover" />
             </div>
             <div className="grid grid-rows-2 gap-4 h-[400px] md:h-auto">
               <div className="overflow-hidden rounded-2xl bg-muted relative border border-border/50">
-                <img src="/projects/super-corridor.png" alt="Commercial Property" className="absolute inset-0 size-full object-cover" />
+                <img src="/projects/images.jfif" alt="Commercial Property" className="absolute inset-0 size-full object-cover" />
               </div>
               <div className="overflow-hidden rounded-2xl bg-muted relative border border-border/50">
                 <img src="/projects/farm-estate.png" alt="Agricultural Land" className="absolute inset-0 size-full object-cover" />
@@ -124,7 +124,7 @@ export function DinikaSite() {
           {[
             { name: "IRIS Premium", status: "Ongoing", image: "/projects/indore-residence.png", desc: "Luxury residential apartments in a prime locale." },
             { name: "IRIS Park", status: "Completed", image: "/projects/farm-estate.png", desc: "Premium plotted development for custom homes." },
-            { name: "Super Corridor Hub", status: "Ongoing", image: "/projects/super-corridor.png", desc: "Next-gen commercial spaces on the Super Corridor." }
+            { name: "Super Corridor Hub", status: "Upcoming", image: "/projects/super-corridor.png", desc: "Next-gen commercial spaces on the Super Corridor." }
           ].map((project, i) => (
             <Card key={i}>
               <div className="relative">

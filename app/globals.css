@@ -51,20 +51,65 @@
   --radius: 0.75rem;
 }
 
-* { @apply border-border outline-ring/50; }
-html { scroll-behavior: smooth; background: var(--background); }
-body { @apply bg-background text-foreground font-sans; }
-::selection { background: var(--accent); color: var(--accent-foreground); }
+* {
+  @apply border-border outline-ring/50;
+}
 
-.nav-link { @apply text-sm font-medium text-muted-foreground transition-colors hover:text-foreground; }
-.eyebrow { @apply flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-[0.2em] text-accent; }
-.field-label { @apply flex flex-col gap-2 text-xs font-mono font-semibold uppercase tracking-[0.14em] text-muted-foreground; }
-.field-input { @apply w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-normal tracking-normal text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-primary focus:ring-2 focus:ring-primary/20; }
+html {
+  scroll-behavior: auto;
+  background: var(--background);
+}
 
-@keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-.animate-fade-up { animation: fade-up 0.8s ease-out both; }
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.nav-link {
+  @apply text-sm font-medium text-muted-foreground transition-colors hover:text-foreground;
+}
+
+.eyebrow {
+  @apply flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-[0.2em] text-accent;
+}
+
+.field-label {
+  @apply flex flex-col gap-2 text-xs font-mono font-semibold uppercase tracking-[0.14em] text-muted-foreground;
+}
+
+.field-input {
+  @apply w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-normal tracking-normal text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-primary focus:ring-2 focus:ring-primary/20;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

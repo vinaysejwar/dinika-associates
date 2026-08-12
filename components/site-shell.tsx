@@ -15,13 +15,13 @@ const navItems = [
 
 export function Logo() {
   return <Link href="/" aria-label="Dinika Associates home" className="flex flex-col items-start gap-0">
-    <Image src="/dinika-logo.png" alt="Dinika Associates" width={20} height={56}  className="h-14 w-auto object-contain mix-blend-multiply" priority />
+    <Image src="/dinika-logo.png" alt="Dinika Associates" width={20} height={56} className="h-14 w-auto object-contain mix-blend-multiply" priority />
   </Link>
 }
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
-  return <header className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur">
+  return <header className="sticky top-0 z-50 border-b border-border/40 bg-white backdrop-blur">
     <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
       <Logo />
       <nav className="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
@@ -38,11 +38,13 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer className="bg-secondary px-5 py-16 text-secondary-foreground sm:px-8 lg:px-12">
-    <div className="mx-auto max-w-7xl">
+  return <footer className="bg-secondary py-16 text-secondary-foreground">
+    <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
       <div className="flex flex-col gap-12 sm:flex-row sm:justify-between">
         <div className="max-w-xs">
-          <Logo />
+          <Link href="/" aria-label="Dinika Associates home" className="flex flex-col items-start gap-0">
+            <Image src="/dinika-logo-white.png" alt="Dinika Associates" width={20} height={56} className="h-14 w-auto object-contain mix-blend-screen" priority />
+          </Link>
           <p className="mt-5 text-sm leading-6 text-secondary-foreground/70">Building dreams, creating values and relationships through honest real estate consultancy.</p>
           <p className="mt-6 font-mono text-xs font-bold tracking-widest text-accent">EST. 2022</p>
         </div>
@@ -56,7 +58,7 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col gap-3 text-sm text-secondary-foreground/70">
             <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-secondary-foreground">Contact</h4>
-            <p>Indore, Madhya Pradesh<br/>India</p>
+            <p>Indore, Madhya Pradesh<br />India</p>
             <a href="mailto:info@dinikaassociates.com" className="hover:text-primary transition-colors mt-2">info@dinikaassociates.com</a>
           </div>
         </div>
@@ -81,9 +83,9 @@ export function CtaBanner({ title, description }: { title?: string, description?
 }
 
 export function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {
-  return <section className="border-b border-border bg-muted px-5 py-16 sm:px-8 sm:py-24 lg:px-12"><div className="mx-auto max-w-7xl"><p className="eyebrow">{eyebrow}</p><h1 className="mt-4 max-w-4xl text-balance font-serif text-5xl leading-[1.02] tracking-tight sm:text-7xl">{title}</h1><p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">{description}</p></div></section>
+  return <section className="border-b border-border bg-muted py-16 sm:py-24"><div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12"><p className="eyebrow">{eyebrow}</p><h1 className="mt-4 max-w-4xl text-balance font-serif text-5xl leading-[1.02] tracking-tight sm:text-7xl">{title}</h1><p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">{description}</p></div></section>
 }
 
-export function PageFrame({ children, ctaTitle, ctaDescription }: { children: React.ReactNode, ctaTitle?: string, ctaDescription?: string }) { 
-  return <><SiteHeader /><main>{children}</main><CtaBanner title={ctaTitle} description={ctaDescription} /><SiteFooter /></> 
+export function PageFrame({ children, ctaTitle, ctaDescription }: { children: React.ReactNode, ctaTitle?: string, ctaDescription?: string }) {
+  return <><SiteHeader /><main>{children}</main><CtaBanner title={ctaTitle} description={ctaDescription} /><SiteFooter /></>
 }
