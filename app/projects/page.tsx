@@ -10,33 +10,39 @@ import { cn } from "@/lib/utils"
 
 const projects = [
   {
-    name: "IRIS \u2013 New Commercial at Super Corridor",
+    name: "Ayodhya estate",
     status: "Ongoing",
-    image: "/projects/super-corridor.png",
-    desc: "Next-gen commercial spaces designed for modern businesses and high footfall."
+    image: "/projects/ayodhya-1.jpg",
+    desc: "A tranquil haven where heritage and modernity converge in perfect harmony. Experience the epitome of luxurious living amidst sprawling landscapes and architectural grandeur. Welcome to a timeless retreat at Iris Ayodhya Estate."
   },
   {
-    name: "IRIS Premium",
+    name: "Blue Iris",
     status: "Ongoing",
-    image: "/projects/iris-premium-plan.png",
+    image: "/projects/blue-iris.png",
     desc: "Luxury residential apartments in a prime locale with world-class amenities."
   },
   {
-    name: "IRIS Future",
+    name: "IRIS super corridor near by TCS infosis",
     status: "Upcoming",
-    image: "/projects/iris-future-plan.png",
-    desc: "Premium plotted development designed for custom homes and farm estates."
+    image: "/projects/super-corridor2.jpeg",
+    desc: "This exclusive commercial hub at the heart of Indore’s Super Corridor offers premium retail and office spaces. Strategically located near TCS Infosis and the proposed Metro Station, it guarantees high visibility and unparalleled accessibility for thriving businesses."
   },
+  // {
+  //   name: "IRIS Future",
+  //   status: "Upcoming",
+  //   image: "/projects/super-corridor2.png",
+  //   desc: "This plotted development at Super Corridor offers premium plots in a fast-developing zone. Ideal for constructing custom homes or farmhouses, it provides a perfect blend of tranquility and connectivity with essential amenities and infrastructure."
+  // },
   {
     name: "IRIS Park",
     status: "Completed",
-    image: "/projects/iris-park-plan.png",
+    image: "/projects/iris-park.jpg",
     desc: "A beautifully planned residential community with robust infrastructure."
   },
   {
     name: "IRIS Nest",
     status: "Completed",
-    image: "/projects/iris-nest-plan.png",
+    image: "/projects/iris-nest.jpg",
     desc: "Cozy and secure living spaces crafted for modern families."
   },
 ]
@@ -112,11 +118,11 @@ export default function ProjectsPage() {
         )}
 
         {/* ATTRIBUTION NOTE */}
-        <div className="mt-20 pt-8 border-t border-border/50 text-center">
+        {/* <div className="mt-20 pt-8 border-t border-border/50 text-center">
           <p className="font-mono text-xs text-muted-foreground tracking-wide">
             Project imagery courtesy of <a href="#" className="underline hover:text-foreground transition-colors">The IRIS Group</a>
           </p>
-        </div>
+        </div> */}
       </Section>
     </PageFrame>
   )

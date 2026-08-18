@@ -29,11 +29,11 @@ export function DinikaSite() {
         <div className="mx-auto max-w-7xl mt-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:h-[450px]">
             <div className="md:col-span-2 overflow-hidden rounded-2xl bg-muted relative h-[300px] md:h-auto border border-border/50">
-              <img src="/projects/Residential.jpg" alt="Residential Property" className="absolute inset-0 size-full object-cover" />
+              <img src="/projects/super-corridor2.jpeg" alt="Residential Property" className="absolute inset-0 size-full object-cover" />
             </div>
             <div className="grid grid-rows-2 gap-4 h-[400px] md:h-auto">
               <div className="overflow-hidden rounded-2xl bg-muted relative border border-border/50">
-                <img src="/projects/images.jfif" alt="Commercial Property" className="absolute inset-0 size-full object-cover" />
+                <img src="/projects/super-corridor3.jpeg" alt="Commercial Property" className="absolute inset-0 size-full object-cover" />
               </div>
               <div className="overflow-hidden rounded-2xl bg-muted relative border border-border/50">
                 <img src="/projects/farm-estate.png" alt="Agricultural Land" className="absolute inset-0 size-full object-cover" />
