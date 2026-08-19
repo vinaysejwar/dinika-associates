@@ -2,8 +2,8 @@
 
 import { Resend } from 'resend';
 
-// TEMPORARY - swap to Dinikaassociates@gmail.com once domain is verified
-const CONTACT_EMAIL_TO = 'vinaysejwar9782@gmail.com';
+// TEMPORARY - swap to dinikaassociates@gmail.com once domain is verified
+const CONTACT_EMAIL_TO = 'dinikaassociates@gmail.com';
 
 export async function sendContactEmail(formData: FormData) {
   // --- Extract & sanitize fields ---

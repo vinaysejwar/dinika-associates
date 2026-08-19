@@ -155,7 +155,7 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+          {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border relative">
               <img src="/projects/super-corridor1.jpeg" alt="Interior Details" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
             <div className="aspect-square rounded-2xl overflow-hidden bg-muted border border-border hidden md:block relative">
               <img src="/projects/farm-estate.png" alt="Landscaping" className="absolute inset-0 size-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-          </div>
+          </div> */}
         </Section>
       </div>
     </PageFrame>

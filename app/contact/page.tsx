@@ -174,8 +174,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-serif text-xl text-secondary mb-2">Email Us</h4>
-                  <a href="mailto:Dinikaassociates@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Dinikaassociates@gmail.com
+                  <a href="mailto:dinikaassociates@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    dinikaassociates@gmail.com
                   </a>
                 </div>
               </div>

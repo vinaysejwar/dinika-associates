@@ -59,7 +59,7 @@ export function SiteFooter() {
           <div className="flex flex-col gap-3 text-sm text-secondary-foreground/70">
             <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-secondary-foreground">Contact</h4>
             <p>Indore, Madhya Pradesh<br />India</p>
-            <a href="mailto:info@dinikaassociates.com" className="hover:text-primary transition-colors mt-2">info@dinikaassociates.com</a>
+            <a href="mailto:dinikaassociates@gmail.com" className="hover:text-primary transition-colors mt-2">dinikaassociates@gmail.com</a>
           </div>
         </div>
       </div>
